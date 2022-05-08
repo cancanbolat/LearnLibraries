@@ -1,0 +1,42 @@
+﻿  belirtilen controller'da her metod tipine göre ayrı ayrı limit belirlenir mesela post için 100, get için 100
+  
+  "IpRateLimiting": {
+    "EnableEndpointRateLimiting": true, //endpointlere tek tek limit verecek misin ?
+
+    "StackBlockedRequests": false, 
+    //mesela 10 dakikada 100 istek yapılacak diye limit koyduk. 100'ü geçince 101. isteği sayacak mı saymayacak mı ?
+
+    "RealIpHeader": "X-Real-IP",
+    "ClientIdHeader": "X-ClientId",
+    "HttpStatusCode": 429, //limit aşılırsa geriye dönülecek
+    "IpWhitelist": [ "127.0.0.1", "::1/10" //bu ipV6 ], //sınırsız izinli ip'ler. bunlar limite tabi tutulmaz
+    "EndpointWhitelist": [ "get:/api/license", "*:/api/status" ],
+    "ClientWhitelist": [ "dev-id-1", "dev-id-2" ],
+    "GeneralRules": [ //genel kurallar
+      {
+        "Endpoint": "*", //tüm endpointlere
+        "Period": "1s", //1 saniyede
+        "Limit": 2 //2 tane istek yapılabilir
+      },
+      {
+        "Endpoint": "*:/api/product",
+        "Period": "15m",
+        "Limit": 100
+      },
+      {
+        "Endpoint": "GET (burda belitebilirsin):/api/product",
+        "Period": "15m",
+        "Limit": 100
+      },
+      {
+        "Endpoint": "*",
+        "Period": "12h",
+        "Limit": 1000
+      },
+      {
+        "Endpoint": "*",
+        "Period": "7d",
+        "Limit": 10000
+      }
+    ]
+  }

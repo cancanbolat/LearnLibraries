@@ -1,0 +1,9 @@
+﻿* Separation Of Concern (SoC) Prensibi
+Tek bir yapı içinde farklı işlevlerdeki kodları barındırmak yerine 
+o kodları farklı yerlere taşımak. Bu sayede kod okunabilirliği sağlanır. Proje sürdürülebilir olur.
+İlgili kod ilgili yerde.
+Fluent Validation SoC'u uygulamamızı sağlar 
+
+* Fluent Validation Unit Test yazmayı kolaylaştırır.
+* Custom doğrulama yazılabilir. 
+* API'de kullanılınca daha iyi olur.

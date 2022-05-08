@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "91c04c3a-94d1-4fd1-90ba-47d67d52b274": {
+      "ProjectGuid": "91c04c3a-94d1-4fd1-90ba-47d67d52b274",
+      "DisplayName": "RateLimit",
+      "ColorIndex": 0
+    },
+    "c61c5bf8-4f12-41b1-ba00-fbeca54ca48a": {
+      "ProjectGuid": "c61c5bf8-4f12-41b1-ba00-fbeca54ca48a",
+      "DisplayName": "FluentValidation.Mvc",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "d8664b11-ebfd-41d2-b3d3-3c532db67236": {
+      "ProjectGuid": "d8664b11-ebfd-41d2-b3d3-3c532db67236",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 2
+    },
+    "f842f50f-8821-4a9e-86cd-4a01a22805b8": {
+      "ProjectGuid": "f842f50f-8821-4a9e-86cd-4a01a22805b8",
+      "DisplayName": "HangFire.Web",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
